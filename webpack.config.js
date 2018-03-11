@@ -14,7 +14,7 @@ module.exports = {
     filename: '[name].bundle.js'
   },
   optimization: {
-    minimize: false,
+    minimize: true,
     runtimeChunk: {
       name: 'vendor'
     },
@@ -29,24 +29,6 @@ module.exports = {
         }
       }
     }
-  },
-  module: {
-    rules: [
-      {
-        test: /.js$/,
-        loader: 'babel-loader',
-        include: [src],
-        exclude: /node_modules/
-      },
-      {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      }
-    ]
   },
   devServer: {
     host: '0.0.0.0',
