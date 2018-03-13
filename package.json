@@ -9,6 +9,7 @@
     "webpack-dev-server": "^3.1.1"
   },
   "devDependencies": {
+    "aframe-physics-system": "^3.0.2",
     "babel-loader": "^7.1.4",
     "raw-loader": "^0.5.1",
     "webpack-cli": "^2.0.11"
