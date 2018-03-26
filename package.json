@@ -5,6 +5,8 @@
   "main": "index.js",
   "dependencies": {
     "aframe": "^0.8.0",
+    "aframe-animation-component": "^4.1.1",
+    "aframe-particle-system-component": "^1.0.11",
     "webpack": "^4.1.1",
     "webpack-dev-server": "^3.1.1"
   },
