@@ -30,6 +30,20 @@ module.exports = {
       }
     }
   },
+  module: {
+    rules: [
+        {
+            test: /\.js$/,
+            loader: 'babel-loader',
+            include: [src],
+            exclude: /node_modules/
+        },
+        {
+            test: /.html$/,
+            loader: 'raw-loader'
+        }
+    ]
+  },
   devServer: {
     host: '0.0.0.0',
     port: 3000,
